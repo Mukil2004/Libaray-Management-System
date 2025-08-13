@@ -1,0 +1,7 @@
+UPDATE users
+SET proof_path = REPLACE(proof_path, 'D:\\fullstackwebdevelopment\\Lib-Manage-Sys\\library-management\\backend\\', '')
+WHERE proof_path LIKE 'D:%';
+
+UPDATE users
+SET proof_path = REPLACE(proof_path, 'uploads/uploads\\', 'uploads/')
+WHERE proof_path LIKE 'uploads/uploads\\%';
